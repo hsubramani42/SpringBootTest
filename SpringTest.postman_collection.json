@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "7540f59b-fb6f-41d4-98d6-1d87d549bf17",
+		"name": "SpringTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"user2@gmail.com\",\r\n    \"name\": \"User 2\",\r\n    \"password\":\"userdwe3412\",\r\n    \"address\":\"Bangalore, Karnataka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"h.subramani@zee.com\",\r\n    \"name\": \"H Subramani\",\r\n    \"password\":\"hsubramani123\",\r\n    \"address\":\"Kuppam, Andhra Pradesh\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/api/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"h.subr@.com\",\r\n    \"password\":\"hsubramani123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/api/users/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"users",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dele User By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/users/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"users",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Food",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"foodName\": \"Burger\",\r\n    \"foodCost\": 99.00,\r\n    \"foodType\": \"Indian\",\r\n    \"foodPic\":\"https://media.istockphoto.com/photos/authentic-chicken-biryani-with-onion-raita-picture-id516401834?s=612x612\",\r\n    \"description\": \"Simply put, burger is a spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot.\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/api/food",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"food"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Food By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/foods/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"foods",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Food",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/food/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"food",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Food By Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/food/Mexican",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"food",
+						"Mexican"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Foods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/food/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"food",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Food",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"foodName\": \"Chicken Biryani\",\r\n    \"foodCost\": 299.99,\r\n    \"foodType\": \"Indian\",\r\n    \"foodPic\":\"https://media.istockphoto.com/photos/authentic-chicken-biryani-with-onion-raita-picture-id516401834?s=612x612\",\r\n    \"description\": \"Simply put, biryani is a spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot.\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/api/foods/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"foods",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Food",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/foods/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"foods",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
