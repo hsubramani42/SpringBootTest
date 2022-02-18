@@ -3,7 +3,6 @@ package com.learning.service;
 import java.util.List;
 
 import com.learning.entity.Food;
-import com.learning.entity.FoodType;
 import com.learning.entity.TypeOfFood;
 import com.learning.exceptions.IdNotFoundException;
 

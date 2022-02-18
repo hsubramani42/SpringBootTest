@@ -4,6 +4,7 @@ import org.hibernate.boot.model.naming.Identifier;
 import org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl;
 import org.hibernate.engine.jdbc.env.spi.JdbcEnvironment;
 
+@SuppressWarnings("serial")
 public class CustomNamingStrategy extends PhysicalNamingStrategyStandardImpl {
 	private final static String POSTFIX = "_table";
 

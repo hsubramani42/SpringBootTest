@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 import com.learning.entity.Address;
 
+@SuppressWarnings("serial")
 public class AddressSerializer extends StdSerializer<Address> {
 
 	public AddressSerializer() {

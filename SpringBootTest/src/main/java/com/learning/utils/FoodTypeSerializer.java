@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 import com.learning.entity.TypeOfFood;
 
+@SuppressWarnings("serial")
 public class FoodTypeSerializer extends StdSerializer<TypeOfFood>
 {
 	public FoodTypeSerializer() {

@@ -54,8 +54,9 @@ public class UserServiceImpl implements UserService {
 		// user id shouldn't change so it shouldn't change
 		user.setId(existing.get().getId());
 
-		// filling the missing details with existing details as the save will overrides
-		// the existing
+		// the fields which are null represents that user don't want to update those
+		// fields
+		// so replacing the null values with the existing data
 		if (user.getAddress() == null)
 			user.setAddress(existing.get().getAddress());
 		if (user.getName() == null)
@@ -64,6 +65,8 @@ public class UserServiceImpl implements UserService {
 			user.setPassword(existing.get().getPassword());
 		if (user.getEmail() == null)
 			user.setEmail(existing.get().getEmail());
+		if (user.getRoles() == null)
+			user.setRoles(existing.get().getRoles());
 
 		return userRepository.save(user);
 	}
